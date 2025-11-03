@@ -1,0 +1,106 @@
+/* Estilos específicos para componentes */
+
+/* Header Styles */
+.header-container {
+  padding-top: 1rem;
+}
+
+/* Current Weather Animations */
+.temperature-display {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.weather-icon {
+  animation: bounce 2s infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Gradient Backgrounds */
+.gradient-sunny {
+  background: linear-gradient(135deg, #47B2FF, #1c5491);
+}
+
+.gradient-cloudy {
+  background: linear-gradient(135deg, #5AC8FA, #1c5491);
+}
+
+.gradient-rainy {
+  background: linear-gradient(135deg, #007AFF, #5856D6);
+}
+
+.gradient-night {
+  background: linear-gradient(135deg, #5856D6, #AF52DE);
+}
+
+/* Scroll personalizado para pronóstico por hora */
+.hourly-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.hourly-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.hourly-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+/* Efectos de hover */
+.weather-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 3.5rem;
+  }
+  
+  .weather-card {
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+}
+
+/* AQI Progress bar style */
+.aqi-progress {
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.aqi-progress-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+

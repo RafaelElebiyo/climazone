@@ -1,0 +1,53 @@
+/* Variables CSS para colores y temas */
+:root {
+  --primary-blue: #007AFF;
+  --dark-bg: #000000;
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --text-primary: #FFFFFF;
+  --text-secondary: #8E8E93;
+  --gradient-sunny: linear-gradient(135deg, #47B2FF, #a3c6ec);
+  --gradient-cloudy: linear-gradient(135deg, #5AC8FA, #215892);
+  --gradient-rainy: linear-gradient(135deg, #007AFF, #5856D6);
+  --gradient-night: linear-gradient(135deg, #5856D6, #AF52DE);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: var(--dark-bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: var(--gradient-sunny);
+  transition: background 0.5s ease;
+}
+
+.weather-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF, #E5E5EA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
